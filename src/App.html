@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rental Service</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class = "bg-green-300 shadow-lg">
+
+        <div class="flex justify-center items-center">
+            <a class="text-xl font-semibold tracking-wide justify-center" href="#hero">Zavala Rentals</a>
+        </div>
+
+        <nav class="flex justify-center items-center">
+            <!-- Navigation will go here -->
+            <div class="flex gap-4 text-sm">
+            <a href="#about">About</a>
+            <a href="#rentals">Rentals</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#details">Details</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="hero-content">
+                <h1>Zavala Rental Services</h1>
+                <p>Rental Services for Events and Parties</p>
+                <img src="images/hero-image.jpg" alt="Hero Image">
+
+            </div>
+            
+        </section>
+
+        <section id="about">
+            <!-- About/Introduction section -->
+            <div>
+                <p>Zavala Rental Services is a company that rents out chairs, tables, and bathrooms for events and parties.</p>
+                <p>We are a family-owned and operated business.</p>
+            </div>
+        </section>
+
+        <section id="rentals" class="bg-slate-900 text-slate-200 max-w-6xl grid gap-8 md:grid-cols-3 mx-auto">
+            <!-- Rental items section (chairs, tables, bathrooms) -->
+            <div class="rental-category">
+                <!-- Chairs -->
+                 <div class="w-auto rounded object-cover">
+                    Chairs
+                    <img src="../images/chair.jpg" alt="Chairs" loading="lazy">
+                 </div>
+            </div>
+
+            <div class="rental-category">
+                <!-- Tables -->
+                <div class = "h-20 w-auto">
+                    Tables
+                    <img src="../images/chair.jpg" alt="Tables">
+                </div>
+            </div>
+            <div class="rental-category">
+                <!-- Bathrooms -->
+                <div class="h-20 w-auto">
+                    Bathrooms
+                    <img src="../images/chair.jpg" alt="Bathrooms">
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery">
+            <!-- Photo gallery section -->
+             <div>
+                <!-- <img src="images/gallery1.jpg" alt="Gallery 1">
+                <img src="images/gallery2.jpg" alt="Gallery 2">
+                <img src="images/gallery3.jpg" alt="Gallery 3">
+                <img src="images/gallery4.jpg" alt="Gallery 4">
+                <img src="images/gallery5.jpg" alt="Gallery 5">
+                <img src="images/gallery6.jpg" alt="Gallery 6"> -->
+             </div>
+        </section>
+
+        <section id="details">
+            <!-- Rental details and information -->
+             <div>
+
+             </div>
+        </section>
+
+        <section id="contact" class="bg-slate-50 py-16">
+            <div class="max-w-4xl mx-auto px-4">
+                <div class="text-center mb-10">
+                    <p class="text-sm uppercase tracking-wide text-emerald-600">Contact</p>
+                    <h2 class="text-3xl font-semibold text-slate-900">Request Availability</h2>
+                    <p class="text-slate-600 mt-3">Send us a message and we’ll follow up with pricing, availability, and delivery details.</p>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg p-8">
+                    <form action="mailto:service@TGLD.org" method="post" enctype="text/plain" class="grid gap-6">
+                        <label class="grid gap-2 text-sm">
+                            <span class="font-medium text-slate-700">Email*</span>
+                            <input type="email" name="email" required placeholder="you@example.com" class="rounded-lg border border-slate-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-emerald-500">
+                        </label>
+                        <label class="grid gap-2 text-sm">
+                            <span class="font-medium text-slate-700">Phone (optional)</span>
+                            <input type="tel" name="phone" placeholder="(555) 123-4567" class="rounded-lg border border-slate-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-emerald-500">
+                        </label>
+                        <label class="grid gap-2 text-sm">
+                            <span class="font-medium text-slate-700">Message*</span>
+                            <textarea name="message" required rows="4" placeholder="Tell us about your event, date, location, and what you need." class="rounded-lg border border-slate-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-emerald-500"></textarea>
+                        </label>
+                        <button type="submit" class="w-full sm:w-auto px-6 py-3 bg-emerald-500 text-white font-semibold rounded-lg hover:bg-emerald-400 transition">Send Message</button>
+                    </form>
+                    <div class="mt-6 text-center text-sm text-slate-500">
+                        Prefer calling? Reach us at <span class="font-semibold text-slate-700">+1 (209) 263-9292</span>.
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-slate-900 text-slate-200">
+        <div class="max-w-6xl mx-auto px-4 py-12 grid gap-8 md:grid-cols-4">
+            <div>
+                <h3 class="text-lg font-semibold mb-3">Zavala Rentals</h3>
+                <p class="text-sm text-slate-400">Reliable chairs, tables, and restroom rentals for events across Northern California.</p>
+            </div>
+            <div>
+                <h4 class="uppercase text-xs tracking-wide text-slate-400 mb-2">Explore</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#about" class="hover:text-white">About Us</a></li>
+                    <li><a href="#rentals" class="hover:text-white">Rentals</a></li>
+                    <li><a href="#gallery" class="hover:text-white">Gallery</a></li>
+                    <li><a href="#details" class="hover:text-white">Details</a></li>
+                    <li><a href="#contact" class="hover:text-white">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="uppercase text-xs tracking-wide text-slate-400 mb-2">Contact</h4>
+                <p class="text-sm">service@tgld.org</p>
+                <p class="text-sm">+1 (209) 263-9292</p>
+                <p class="text-sm">Northern California, USA</p>
+            </div>
+            <div>
+                <h4 class="uppercase text-xs tracking-wide text-slate-400 mb-2">Stay Connected</h4>
+                <div class="flex gap-3 text-sm">
+                    <a href="#" class="hover:text-white" aria-label="Visit our Instagram">Instagram</a>
+                    <a href="#" class="hover:text-white" aria-label="Visit our Facebook">Facebook</a>
+                    <a href="#" class="hover:text-white" aria-label="Send us a WhatsApp message">WhatsApp</a>
+                </div>
+                <button class="mt-4 px-4 py-2 bg-emerald-500 text-slate-900 font-semibold rounded hover:bg-emerald-400">Request a Quote</button>
+            </div>
+        </div>
+        <div class="border-t border-slate-800 text-center text-sm py-4">
+            © 2025 Zavala Rental Services. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+

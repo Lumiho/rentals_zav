@@ -12,7 +12,7 @@ A website for chair, table, and bathroom rental services.
   - Details section
   - Contact section
 
-- `styles.css` - Stylesheet for styling
+- `styles.css` - Optional custom stylesheet (Tailwind CSS is included via CDN)
 - `js/main.js` - JavaScript for interactivity
 - `images/` - Folder for images and photos
 
