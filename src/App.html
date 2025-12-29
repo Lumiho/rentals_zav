@@ -5,24 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rental Service</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Great+Vibes&family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
 </head>
-<body>
-    <header class="bg-slate-800 text-slate-200 shadow-lg sticky top-0 z-20">
+<body style="font-family: 'Times New Roman', serif;">
+    <header class="bg-black text-slate-200 shadow-lg sticky top-0 z-20">
         <div class="max-w-6xl mx-auto px-4">
             <div class="flex items-center justify-between h-16">
                 <a class="flex items-center gap-4 leading-tight" href="#hero">
-                    <span class="text-2xl font-semibold tracking-wide">ZRentals</span>
+                    <span class="text-2xl font-semibold tracking-wide" style="font-family: 'Times New Roman', serif;">ZRentals</span>
                     <span class="text-sm text-emerald-300 font-['Playfair_Display',serif] italic transform translate-y-[0.05em]">Luxury Rentals for Every Occasion</span>
                 </a>
                 <nav aria-label="Primary" class="flex items-center">
                     <div class="flex gap-6 text-sm font-medium">
-                        <a class="hover:opacity-80" href="#about">About</a>
-                        <a class="hover:opacity-80" href="#gallery">Gallery</a>
-                        <a class="hover:opacity-80" href="#details">Details</a>
-                        <a class="hover:opacity-80" href="#contact">Contact</a>
+                        <a class="hover:opacity-80 hover:text-emerald-400" href="#about">About</a>
+                        <a class="hover:opacity-80 hover:text-emerald-400" href="#gallery">Gallery</a>
+                        <a class="hover:opacity-80 hover:text-emerald-400" href="#details">Details</a>
+                        <a class="hover:opacity-80 hover:text-emerald-400" href="#contact">Contact</a>
                     </div>
                 </nav>
             </div>
@@ -30,125 +35,197 @@
     </header>
 
     <main>
-        <section id="hero" class="bg-slate-50 py-16">
+        <section id="hero" class="bg-slate-300 py-20">
             <div class="max-w-6xl mx-auto px-4">
-                <div class="flex items-baseline justify-between gap-6">
-                    <h1 class="text-4xl sm:text-5xl font-bold text-slate-900">ZRental Services</h1>
-                    <span class="text-lg sm:text-xl text-emerald-700 whitespace-nowrap font-['Playfair_Display',serif] italic transform translate-y-[0.05em]">Luxury Rentals for Every Occasion</span>
+                <div class="bg-white/80 border border-slate-200 rounded-2xl shadow-lg px-6 sm:px-10 py-10">
+                    <div class="grid lg:grid-cols-2 gap-10 lg:gap-14 items-center">
+                        <div>
+                            <p class="text-sm tracking-[0.25em] uppercase text-emerald-500 mb-3">ZRentals</p>
+                            <h1 class="text-4xl sm:text-5xl font-bold text-slate-900 leading-tight">
+                                Luxury Event Rentals in Northern California
+                            </h1>
+                            <p class="mt-4 text-lg text-slate-700 leading-relaxed">
+                                Chairs, tables, cocktail setups, décor, and bathrooms for weddings, private parties,
+                                and corporate events — with professional delivery, setup, and teardown.
+                            </p>
+                            <div class="mt-6 flex flex-wrap items-center gap-4">
+                                <a href="#details" class="inline-flex items-center justify-center px-6 py-3 rounded-full bg-emerald-500 text-black font-semibold hover:bg-emerald-400 transition">
+                                    Request a Quote
+                                </a>
+                                <a href="#gallery" class="inline-flex items-center justify-center px-5 py-3 rounded-full border border-slate-300 text-slate-700 hover:bg-slate-100 transition">
+                                    View Gallery
+                                </a>
+                            </div>
+                            <p class="mt-3 text-sm text-slate-500">
+                                Serving Northern California with curated, high-quality rental setups.
+                            </p>
+                        </div>
+                        <div>
+                            <div class="relative h-72 sm:h-80 lg:h-96">
+                                <div class="absolute inset-0 rounded-2xl bg-gradient-to-br from-emerald-500/10 via-emerald-500/0 to-emerald-500/20 border border-emerald-200/40"></div>
+                                <img src="../images/logo.png" alt="ZRentals Logo" class="relative z-10 w-full h-full object-contain p-8">
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <p class="text-lg text-slate-700 mt-4">Rental Services for Events and Parties</p>
-                <img src="../images/logo.png" alt="Hero Image" class="mt-8 w-full h-80 sm:h-96 object-cover rounded-xl shadow-lg">
             </div>
         </section>
 
-        <section id="about" class="bg-slate-200 py-16">
+        <section id="about" class="bg-black text-slate-200 py-20">
             <!-- About/Introduction section -->
             <div class="max-w-6xl mx-auto px-4">
-                <div class="text-center mb-10">
-                    <h2 class="text-3xl font-semibold text-slate-900"><i class="text-emerald-600">About</i> Us</h2>
-                    <p class="text-emerald-600 mt-3">ZRentals is a company that rents out <b>chairs and tables (with or without custom styling), cocktail tables, functional décor & bathrooms!</b></p>
-                    <p class="text-slate-600 mt-3">ZRentals provides custom décor and elevated event essentials designed to create polished, intentional experiences in each occasion. We specialize in custom, luxury-grade rentals that enhance the overall look and flow of weddings, private celebrations, corporate events, and special occasions. </p>
-                    <p class="text-slate-600 mt-3">Every setup is approached with attention to detail and a refined aesthetic — ensuring your event feels cared for, cohesive, and professionally executed.</p>
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-semibold mb-3">About Us</h2>
+                    <div class="w-20 h-0.5 bg-emerald-400 mx-auto"></div>
+                </div>
+                <div class="grid md:grid-cols-2 gap-12 lg:gap-16">
+                    <div class="bg-slate-800/50 border border-slate-800 rounded-lg p-8">
+                        <h3 class="text-2xl font-semibold mb-6 text-emerald-400 pb-4 border-b border-slate-700">What We Rent</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-start gap-4">
+                                <span class="mt-1 h-6 w-6 rounded-full bg-emerald-400/20 text-emerald-300 flex items-center justify-center text-sm flex-shrink-0">✓</span>
+                                <span class="text-slate-200 leading-relaxed">Chairs and Tables<br><span class="text-sm text-slate-400 italic">(with or without custom styling)</span></span>
+                            </li>
+                            <li class="flex items-start gap-4">
+                                <span class="mt-1 h-6 w-6 rounded-full bg-emerald-400/20 text-emerald-300 flex items-center justify-center text-sm flex-shrink-0">✓</span>
+                                <span class="text-slate-200 leading-relaxed">Cocktail Tables</span>
+                            </li>
+                            <li class="flex items-start gap-4">
+                                <span class="mt-1 h-6 w-6 rounded-full bg-emerald-400/20 text-emerald-300 flex items-center justify-center text-sm flex-shrink-0">✓</span>
+                                <span class="text-slate-200 leading-relaxed">Functional Décor</span>
+                            </li>
+                            <li class="flex items-start gap-4">
+                                <span class="mt-1 h-6 w-6 rounded-full bg-emerald-400/20 text-emerald-300 flex items-center justify-center text-sm flex-shrink-0">✓</span>
+                                <span class="text-slate-200 leading-relaxed">Bathrooms</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bg-slate-800/50 border border-slate-800 rounded-lg p-8">
+                        <h3 class="text-2xl font-semibold mb-6 text-emerald-400 pb-4 border-b border-slate-700">Our Services</h3>
+                        <div class="space-y-4 text-slate-200 leading-relaxed">
+                            <p>ZRentals provides custom décor & elevated event essentials designed to create polished, professional experiences for any occasion. We specialize in custom, luxury-grade rentals that enhance overall look and flow of weddings, private celebrations, corporate events, and more.</p>
+                            <p>Every setup is approached with high attention to detail and refined aesthetic ensuring your event feels cared for, cohesive, and professionally executed.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="gallery" class="bg-slate-50 py-5">
+        <section id="gallery" class="bg-slate-300 py-16">
             <div class="max-w-6xl mx-auto px-4">
                 <div class="text-center mb-5">
                     <h2 class="text-3xl font-semibold text-slate-900">Event Setups <i class="text-emerald-600">Gallery</i></h2>
-                    <p class="text-emerald-600 mt-3">A few of our recent deliveries and staging options.</p>
+                    <p class="text-emerald-800 mt-3">A few of our recent deliveries and staging options.</p>
                 </div>
 
                 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
                     <figure class="group relative overflow-hidden rounded-xl shadow-lg bg-white">
                         <img src="../images/stands/bk_stand_clothed.jpg" alt="Backdrop stand daytime" class="h-64 w-full object-cover transition duration-300 group-hover:scale-105">
                         <figcaption class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent text-white opacity-0 group-hover:opacity-100 transition flex items-end p-4 text-sm">
-                            Backdrop stand with open framing
+                            Black-Clothed Bar Stand
                         </figcaption>
                     </figure>
                     <figure class="group relative overflow-hidden rounded-xl shadow-lg bg-white">
                         <img src="../images/stands/stands_night.jpg" alt="Backdrop stand dressed" class="h-64 w-full object-cover transition duration-300 group-hover:scale-105">
                         <figcaption class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent text-white opacity-0 group-hover:opacity-100 transition flex items-end p-4 text-sm">
-                            Dressed stand ready for decor
+                            White-Clothed Bar Stands with Lighting Decor
                         </figcaption>
                     </figure>
                     <figure class="group relative overflow-hidden rounded-xl shadow-lg bg-white">
                         <img src="../images/stands/stands_white.jpg" alt="Stands at night" class="h-64 w-full object-cover transition duration-300 group-hover:scale-105">
                         <figcaption class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent text-white opacity-0 group-hover:opacity-100 transition flex items-end p-4 text-sm">
-                            Evening lighting setup
+                            White-Clothed Bar Stands
                         </figcaption>
                     </figure>
                     <figure class="group relative overflow-hidden rounded-xl shadow-lg bg-white">
                         <img src="../images/bathrooms/IMG_20251215_113508.jpg" alt="Stands day time" class="h-64 w-full object-cover transition duration-300 group-hover:scale-105">
                         <figcaption class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent text-white opacity-0 group-hover:opacity-100 transition flex items-end p-4 text-sm">
-                            Daytime outdoor arrangement
+                            Portable Bathrooms and Hand-Wash Station
                         </figcaption>
                     </figure>
                     <figure class="group relative overflow-hidden rounded-xl shadow-lg bg-white">
                         <img src="../images/tables/long_tables.jpg" alt="Long tables setup" class="h-64 w-full object-cover transition duration-300 group-hover:scale-105">
                         <figcaption class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent text-white opacity-0 group-hover:opacity-100 transition flex items-end p-4 text-sm">
-                            Banquet tables dressed for guests
+                            Banquet Tables Dressed for Guests
                         </figcaption>
                     </figure>
                     <figure class="group relative overflow-hidden rounded-xl shadow-lg bg-white">
                         <img src="../images/bathrooms/bathroom_night.jpg" alt="Portable bathroom at night" class="h-64 w-full object-cover transition duration-300 group-hover:scale-105">
                         <figcaption class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent text-white opacity-0 group-hover:opacity-100 transition flex items-end p-4 text-sm">
-                            Restroom trailers with night lighting
+                            Restroom Trailers With Night Lighting
                         </figcaption>
                     </figure>
                 </div>
             </div>
         </section>
 
-        <section id="details" class="bg-slate-200 py-10">
-            <!-- Rental details and information -->
-             <div class="max-w-6xl mx-auto px-4 text-center">
-                <h2 class="text-3xl font-semibold text-slate-900">Pricing & Estimate <i class="text-emerald-600">Details</i></h2>
-                <p class="text-slate-600 mt-3">Pricing is based on item selection, quantity, décor add-ons, event duration, delivery location, and setup requirements. Cocktail table rentals begin at $25. There is options for upgraded décor, custom covers, and LED lighting available. We provide clear, customized estimates to ensure accurate pricing and a seamless booking experience. Reach out with your event date, location, and needs, and we’ll create a tailored quote aligned with your vision. </p>
-                <p class = "text-emerald-800 mt-3"> FREE CONSULTATIONS ARE ALSO AVAILABLE</p>
-             </div>
-        </section>
+<section id="details" class="bg-black text-slate-50 py-16">
+  <div class="max-w-5xl mx-auto px-4">
+    <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-10">
+      <div class="space-y-4 max-w-xl">
+        <p class="text-sm uppercase tracking-[0.25em] text-emerald-300">Pricing & Estimates</p>
+        <h2 class="text-3xl font-semibold">Transparent, tailored quotes for every event</h2>
+        <p class="text-slate-200">Pricing is based on item selection, quantity, décor add-ons, event duration, delivery location, and setup requirements.</p>
+        <p class="text-slate-100">There are options for upgraded décor, custom covers, and LED lighting available. We provide clear, customized estimates to ensure accurate pricing and a seamless booking experience. Reach out with your event date, location, and needs, and we’ll create a tailored quote aligned with your vision.</p>
+        <p class="text-emerald-200 font-medium">We offer FREE consultations — ask about our packaged deals!</p>
+        <ul class="space-y-2 text-slate-200">
+          <li class="flex items-start gap-3">
+            <span class="mt-1 h-5 w-5 rounded-full bg-emerald-400/20 text-emerald-200 flex items-center justify-center text-xs">✓</span>
+            <span>Detailed itemized breakdowns</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="mt-1 h-5 w-5 rounded-full bg-emerald-400/20 text-emerald-200 flex items-center justify-center text-xs">✓</span>
+            <span>Setup & Delivery tailored to your timeline</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="mt-1 h-5 w-5 rounded-full bg-emerald-400/20 text-emerald-200 flex items-center justify-center text-xs">✓</span>
+            <span>Flexible décor upgrades and lighting options</span>
+          </li>
+        </ul>
+      </div>
 
-        <section id="contact" class="bg-slate-50 py-16">
-            <div class="max-w-4xl mx-auto px-4">
-                <div class="text-center mb-10">
-                    <h2 class="text-3xl font-semibold text-slate-900"> <i class=" text-emerald-600">Contact</i> Us Below!</h2>
-                    <p class="text-slate-600 mt-3">Send us a message and we’ll follow up with pricing, availability, and delivery details.</p>
-                </div>
-                <div class="bg-white rounded-xl shadow-lg p-8">
-                    <form action="mailto:service@TGLD.org" method="post" enctype="text/plain" class="grid gap-6">
-                        <label class="grid gap-2 text-sm">
-                            <span class="font-medium text-slate-700">Your Email*</span>
-                            <input type="email" name="email" required placeholder="you@example.com" class="rounded-lg border border-slate-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-emerald-500">
-                        </label>
-                        <label class="grid gap-2 text-sm">
-                            <span class="font-medium text-slate-700">Phone (optional)</span>
-                            <input type="tel" name="phone" placeholder="(555) 123-4567" class="rounded-lg border border-slate-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-emerald-500">
-                        </label>
-                        <label class="grid gap-2 text-sm">
-                            <span class="font-medium text-slate-700">Message*</span>
-                            <textarea name="message" required rows="4" placeholder="Tell us about your event, date, location, and what you need." class="rounded-lg border border-slate-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-emerald-500"></textarea>
-                        </label>
-                        <button type="submit" class="w-full sm:w-auto px-6 py-3 bg-emerald-500 text-white font-semibold rounded-lg hover:bg-emerald-400 transition">Send Message</button>
-                    </form>
-                    <div class="mt-6 text-center text-sm text-slate-500">
-                        Prefer calling? Reach us at <span class="font-semibold text-slate-700">+1 (209) 263-9292</span>.
-                    </div>
-                </div>
-            </div>
-        </section>
+      <div class="w-full lg:w-[360px] bg-slate-800 border border-slate-700 rounded-2xl shadow-2xl p-8 space-y-6">
+        <div>
+          <p class="text-sm uppercase tracking-[0.2em] text-emerald-300">Typical starting point</p>
+          <div class="flex items-baseline gap-2 mt-2">
+            <span class="text-4xl font-semibold text-white">$—</span>
+            <span class="text-slate-300 text-sm">custom per event</span>
+          </div>
+          <p class="text-slate-300 mt-2">Share your date, guest count, and location for a precise quote.</p>
+        </div>
+        <div class="space-y-3 text-sm text-slate-200">
+          <div class="flex items-center gap-2">
+            <span class="h-2 w-2 rounded-full bg-emerald-400"></span>
+            <span>Free 15-minute consultation</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="h-2 w-2 rounded-full bg-emerald-400"></span>
+            <span>Delivery, setup, and teardown options</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="h-2 w-2 rounded-full bg-emerald-400"></span>
+            <span>Custom styling and lighting add-ons</span>
+          </div>
+        </div>
+        <button class="w-full h-12 rounded-xl bg-emerald-500 text-slate-900 font-semibold hover:bg-emerald-400 transition">
+          Call or Text +1 (209) 263-9292
+        </button>
+        <p class="text-xs text-slate-400 text-center">No hidden fees • Fast turnaround • Northern California</p>
+      </div>
+    </div>
+  </div>
+</section>
     </main>
 
-    <footer class="bg-slate-900 text-slate-200">
+    <footer class="bg-slate-800 text-slate-200">
         <div class="max-w-6xl mx-auto px-4 py-4 grid gap-8 md:grid-cols-4">
 
-            <div class="flex">
+            <div class="flex -ml-12 -mt-2">
                 <img src="../images/logo_transparent.png" alt="logo" class="w-40 sm:w-48 md:w-64 max-w-sm object-contain drop-shadow-lg">
             </div>
 
             <div class="mt-4">
-                <h4 class="uppercase text-s tracking-wide text-slate-400 mb-2">Explore</h4>
+                <h4 class="uppercase text-s tracking-wide text-emerald-400 mb-2">Explore</h4>
                 <ul class="space-y-2 text-sm">
                     <li><a href="#about" class="hover:text-white">About Us</a></li>
                     <li><a href="#gallery" class="hover:text-white">Gallery</a></li>
@@ -159,7 +236,7 @@
 
 
             <div class="mt-4">
-                <h4 class="uppercase text-s tracking-wide text-slate-400 mb-2">Stay Connected</h4>
+                <h4 class="uppercase text-s tracking-wide text-emerald-400 mb-2">Stay Connected</h4>
                 <ul class=" text-sm space-y-2">
                     <li><a href="#" class="hover:text-white" aria-label="Visit our Instagram">Instagram</a></li>
                     <li><a href="#" class="hover:text-white" aria-label="Visit our Facebook">Facebook</a></li>
@@ -168,16 +245,15 @@
             </div>
 
             <div class="mt-4">
-                <h4 class="uppercase text-s tracking-wide text-slate-400 mb-2">Contact</h4>
+                <h4 class="uppercase text-s tracking-wide text-emerald-400 mb-2">Contact</h4>
                 <ul class="space-y-2 text-sm">
-                    <li>service@tgld.org</li>
                     <li>+1 (209) 263-9292</li>
                     <li>Northern California, USA</li>
                 </ul>
             </div>
 
         </div>
-        <div class="border-t border-slate-800 text-center text-sm py-4">
+        <div class="border-t border-slate-600 text-center text-sm py-4">
             © 2025 Zavala Rental Services. All rights reserved.
         </div>
     </footer>
